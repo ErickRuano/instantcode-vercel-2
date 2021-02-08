@@ -8,7 +8,7 @@ const client = axios.create({
 const apiRequest = async (method, url, request, headers)=>{
     return await client({
         method,
-        url : `https://vercel-minimal.vercel.app/api/${url}`,
+        url : `/api/${url}`,
         data : request,
         headers
     })
